@@ -1,0 +1,67 @@
+______________________HTML_________________
+
+Editor or Development Environment(IDE:-Integrated Development Environment)
+
+[Workstation]---------->workspace
+
+
+<!DOCTYPE html>-----------------> Doctype html means HTML5 version. <> is a angular bracket.
+<html lang="en">----------------> <html> opening Tag. lang = "en" means language - english
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>---------------> </html> is a closing Tag.
+
+<html>
+
+   we can write any code as content
+
+</html>
+
+<opening tag> _
+   content     |-------->Element
+</closing tag>_|
+   
+
+<tag space seperated attribute> content </tag>
+
+Content:-------->
+1) any string data
+2) any other tag and element 
+
+Attributes:--> It is used to provide extra information about tag. Attribute uses key and value to represent data.
+
+key = value
+"price" = 43875
+
+<tag attr1 = value1 attr2 = value2 attr3 = value3></tag>
+
+Data-part of Information (Key and Value)
+
+
+Symentic Elements----------->
+
+Tags------------>
+# Symentic tag
+# Non Symentic tag
+
+Guide Line for reading any tag
+(1) Check opening and closing tag
+(2) tag have content area available or not
+(3) attributes of tag :-
+# Global Attributes---->Works with almost every tag
+# Specific to tag attribute work for Specific tag
+
+1_______Elements and Attributes_________
+2_______Table__________
+3________Form___________
+4_________Multimedia__________
+5__________Geolocation___________
+
+
+
