@@ -1,0 +1,42 @@
+CUI - Character User Interface
+GUI - Graphical User Interface
+
+Web Designing:-------------->
+
+Software Application:-
+1:- CUI - Character User Interface(DOS)
+2:- GUI - Graphical User Interface:-
+
+a) Desktop Application
+b) Web Application (any application run with help of chrome)
+c) Mobile Application
+
+
+
+<------------Web Application:----------->
+
+
+[Client Computer]_________________[Internet]___________[Server Computer]                                      |
+     |                                                    IP Address      
+(Web Browser)[http://facebook.com/]               
+                       |        |
+                     name     Domain
+                      |___________|
+                       Domain Name
+
+
+Browser knows following language :-
+(1) HTML[Hypertext Markup Language], 
+(2) Javascript : (Brendan Eich in 1995) is a scripting language,
+(3) CSS : [Cascading Style Sheet], Håkon Wium Lie on 10 October 1994,
+
+ReactJS is a Library and AngularJS is a Framework of Javascript. jQuery is a JavaScript library. 
+
+Bootstrap is a CSS Framework.
+It contains HTML, CSS and JavaScript-based design templates.
+
+Framework and Platform
+  
+
+
+                       
