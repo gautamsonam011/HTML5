@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseMap</title>
+</head>
+<body>
+    <h1>Coords use For Coordinates, UseMap Attribute</h1>
+    <!-- usemap Attribute -->
+    <img usemap="#mymap" src="social.png" width="50%" height="50%" alt="SocialMedia">
+    <map name="mymap">
+        <area shape="rect" coords = "106,123,175,192" href="https://youtube.com">
+        <area shape="rect" coords = "206,120,259,194" href="https://twitter.com">
+        <area shape="rect" coords = "287,120,355,192" href="https://instagram.com">
+        <area shape="rect" coords = "5,5,195,195" href="https://in.linkedin.com/">
+        <area shape="rect" coords = "5,5,195,195" href="https://www.snapchat.com/">
+        <area shape="rect" coords = "5,5,195,195" href="https://facebook.com">
+    </map>
+
+
+    <!-- Table (We can store data in tabuler form) -->
+
+    <table border="2 solid red">
+        <caption style = "font-weight: bolder;color:brown; font-size:x-large">Employee Details</caption>
+        <tr><td colspan="5" style="text-align:center">Welcome</td></tr>
+        <tr>
+            <th>Emp_ID</th>
+            <th>Emp_Name</th>
+            <th>Position</th>
+            <th>Date Of Joining</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ABC1</td>
+            <td>Developer</td>
+            <td>02/04/2023</td>
+            <td>45000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ABC2</td>
+            <td>Software Deve..</td>
+            <td>10/05/2023</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td rowspan="2">ABC3</td>
+            <td>Web Developer</td>
+            <td colspan="2">22/10/2022</td>
+            <!-- <td>50000</td> -->
+        </tr>
+        <tr>
+            <td>4</td>
+            <!-- <td>ABC4</td> -->
+            <td>Accountant</td>
+            <td>02/04/2023</td>
+            <td>45000</td>
+        </tr>
+    </table>
+</body>
+</html>
