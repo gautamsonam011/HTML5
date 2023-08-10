@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="2 solid red" style="background-color:aquamarine">
+        <colgroup style="background-color:darkcyan;"></colgroup>
+        <colgroup style="background-color:chartreuse">
+            <col>
+            <col>
+        </colgroup>
+        <thead style="background-color: cadetblue;color:brown;">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">David</td>
+                <td>Math</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Alex</td>
+                <td>Math</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Computer</td><td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <caption style="color:blue;background-color:coral">This is a Table</caption>
+            <!-- <h4>This is Footer</h4> -->
+        </tfoot>
+    </table>
+
+    <!-- Autofocus Attribute -->
+    <label>Enter Text</label>
+    <input autofocus type="text">
+
+    <!-- Autocomplete Attribute -->
+    <label>Enter Text</label>
+    <input autocomplete="additional-name" type="text">
+
+    <!-- Tittle Attribute -->
+    <a href="https://facebook.com" title="Click on Facebook">FaceBook</a>
+</body>
+</html>
