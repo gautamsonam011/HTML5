@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag Ex</title>
+</head>
+<body>
+    <!-- name:- If we are using name attribute with any element, then Browser automatically send its content to server when we submit the page to server. -->
+    <!-- name attribute used for server
+    class,id used for client side -->
+        <!-- style = "all css" -->
+        <!-- tabindex = 1 attribute -->
+
+    <form action="https://facebook.com" method="get">
+        <label for="id_name">Enter The Name:</label><input type="text" maxlength="20" name="" id="id_name" placeholder="Enter the name">
+        <input type="submit" value="submit">
+
+    </form>
+    <form action="getdata.aspx">
+    <label for="id_name">Enter The Name:</label><input type="text" maxlength="20" name="name" name="" id="id_name" placeholder="Enter the name" pattern="[A-Z]" title="only capital single letter accepted"><br>
+    <label for="id_email">Enter The Email:</label><input type="email" maxlength="100" name="email" name="" id="id_email" placeholder="Enter the email id">
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
