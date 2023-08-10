@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <!-- Pattern attribute of input tag:- 
+    We can write any valid regular expres
+    into pattern attribute by which browser 
+    can automatically validate input elements
+    when submit the page. -->
+
+    <!-- Single Character Pattern and Multiplyer -->
+
+    <!-- id = only digit 0-9 and qualifier -->
+
+    <!-- *----------- 0-n m->min, n->max
+    +----------1-n {m,n},{m,},{,n},{m} exact - m -->
+
+    <!-- [A-z],[A-Za-z],[A-Za-z ],[A-Za-z -]  -->
+
+    <form action="getdata.aspx">
+        <label for="id_name">Enter Name:</label>
+        <input pattern="[A-Za-z ]*" type="text" name="name" name="" id="id_name" title="Enter name here" required pattern="/d*+" value=""><br>
+        <label for=" id_email">Email Id:</label>
+        <input type="email" name="email" email="" id="id_email"><br>
+        <label for="id_m">Mobile Number:</label><input type="number" id="id_m" name="mo_number" name="" maxlength="12">
+        <input type="submit" value="submit"><br>
+        <label for="id_file">Upload Image:</label><input type="file" name="file1" id="id_file"><br>
+
+        <label>Enter Date:</label><input type="date" value="2020-09-03"><br>
+
+        <label>Enter Date Time:</label><input type="week" value=""><br>
+        <input type="submit" value="Submit"><br>
+        <input type="button" value="Button"><br>
+        <input type="reset">
+
+    </form>
+</body>
+</html>
