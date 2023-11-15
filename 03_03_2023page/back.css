@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("download.jpeg");
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    background-position: right top;
+}
+
+h1 {
+    background-color: #faebd7;
+    text-align: center;
+    text-shadow: 3px 3px 5px red;
+}
+
+div {
+    background-color: cadetblue;
+    width: 400px;
+    border: 30px solid red;
+    padding: 50px;
+    margin: 20px;
+    font-size: large;
+}
+
+.div1 {
+    width: 315px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
