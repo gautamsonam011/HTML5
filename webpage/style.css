@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: non;
+    }
+/* @media (min-width:320px) and (max-width:425px){
+    body{
+        display: block;
+        background-color: brown;
+    }
+} 
+@media (min-width:426px) and (max-width:768px){
+    body{
+        display: block;
+        background-color: salmon;
+    }
+} 
+@media (min-width:769px) and (max-width:1024px){
+    body{
+        display: block;
+        background-color: teal;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px){
+    body{
+        display: block;
+        background-color: darkkhaki;
+    }
+}  */
+
+.search-container {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+button {
+    width: 60px;
+    height: 30px;
+    background-color: coral;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+}
+
+header {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: sticky;
+}
+nav{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightcyan;
+    /* width: 100%; */
+    height: auto;
+    /* margin-top: 2px; */
+}
+ul{
+    justify-content: space-around;
+    display: flex;
+     flex-wrap: wrap;
+    list-style: none;
+}
+li{
+    margin: 1rem;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 40%;
+    /* height:0; */
+    transition: .2s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
