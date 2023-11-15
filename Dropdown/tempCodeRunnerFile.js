@@ -1,0 +1,6 @@
+arr.push(600)
+// arr.push(1000)
+// arr.shift()
+// arr.shift(200)
+// arr.unshift(900)
+// arr.pop()
