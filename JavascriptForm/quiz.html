@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(24, 128, 207);
+    }
+
+    .container {
+        width: 35rem;
+        box-shadow: 0px 0px 5px grey;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .col {
+        text-align: justify;
+        padding: 15px;
+        width: 95%;
+    }
+
+    #submit {
+        width: 100%;
+        background-color: rgb(47, 8, 73);
+        transition: 0.5s;
+        color: white;
+        outline: none;
+        border: none;
+        font-size: 25px;
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #submit:hover {
+        background-color: rgb(34, 6, 53);
+    }
+
+    .box {
+        box-shadow: 0px -1px 1px grey;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <section class="main">
+
+        <div class="container">
+            <div class="col">
+                <h3 id="questionBox">
+                    1 Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
+                </h3>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="first" value="a" required>
+                <label for="first">Testing 1</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="second" value="b" required>
+                <label for="second">Testing 2</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="third" value="c" required>
+                <label for="third">Testing 3</label>
+            </div>
+            <div class="col box">
+                <input name="option" type="radio" id="fourth" value="d" required>
+                <label for="fourth">Testing 4</label>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+
+    </section>
+    <script>
+        const quizData = [{
+            question: "Which of the following is a client site language?",
+            a: "Java",
+            b: "C",
+            c: "Python",
+            d: "JavaScript",
+            correct: "d",
+        },
+        {
+            question: "What does HTML stand for?",
+            a: "Hypertext Markup Language",
+            b: "Cascading Style Sheet",
+            c: "Jason Object Notation",
+            d: "Helicopters Terminals Motorboats Lamborginis",
+            correct: "a",
+        },
+        {
+            question: "What year was JavaScript launched?",
+            a: "1996",
+            b: "1995",
+            c: "1994",
+            d: "none of the above",
+            correct: "b",
+        },
+        {
+            question: "What does CSS stands for?",
+            a: "Hypertext Markup Language",
+            b: "Cascading Style Sheet",
+            c: "Jason Object Notation",
+            d: "Helicopters Terminals Motorboats Lamborginis",
+            correct: "b",
+        }
+        ];
+        let index = 0;
+        let correct = 0,
+            incorrect = 0,
+            total = quizData.length;
+        let questionBox = document.getElementById("questionBox");
+        let allInputs = document.querySelectorAll("input[type='radio']")
+        const loadQuestion = () => {
+            if (total === index) {
+                return quizEnd()
+            }
+            reset()
+            const data = quizData[index]
+            questionBox.innerHTML = `${index + 1}) ${data.question}`
+            allInputs[0].nextElementSibling.innerText = data.a
+            allInputs[1].nextElementSibling.innerText = data.b
+            allInputs[2].nextElementSibling.innerText = data.c
+            allInputs[3].nextElementSibling.innerText = data.d
+        }
+
+        document.querySelector("#submit").addEventListener(
+            "click",
+            function () {
+                const data = quizData[index]
+                const ans = getAnswer()
+                if (ans === data.correct) {
+                    correct++;
+                } else {
+                    incorrect++;
+                }
+                index++;
+                loadQuestion()
+            }
+        )
+
+        const getAnswer = () => {
+            let ans;
+            allInputs.forEach(
+                (inputEl) => {
+                    if (inputEl.checked) {
+                        ans = inputEl.value;
+                    }
+                }
+            )
+            return ans;
+        }
+
+        const reset = () => {
+            allInputs.forEach(
+                (inputEl) => {
+                    inputEl.checked = false;
+                }
+            )
+        }
+
+        const quizEnd = () => {
+            // console.log(document.getElementsByClassName("container"));
+            document.getElementsByClassName("container")[0].innerHTML = `
+        <div class="col">
+            <h3 class="w-100"> Hii, you've scored ${correct} / ${total} </h3>
+        </div>
+    `
+        }
+        loadQuestion(index);
+    </script>
+</body>
+
+</html>
