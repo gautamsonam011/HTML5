@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin-left: 14rem;
+}
+li{
+    margin: 0 1.5rem;
+    list-style: none;
+}
+li a{
+    color: black;
+    text-align: center;
+}
+h5{
+    text-align: center;
+    font-weight: 500;
+}
+div a{
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none ;
+    color: black;
+}
+
