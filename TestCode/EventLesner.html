@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener DOM</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            background: burlywood;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        button {
+            color: beige;
+            background: crimson;
+            width: 100px;
+            height: 50px;
+        }
+
+        p {
+            text-align: center;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hii This is addEventListener</h2>
+        <button id="myEvt">Click</button>
+        <p id="EvtLtn"></p>
+        <button id="myclick">Click Here</button>
+        <p id="para"></p>
+
+        <button id="mysum">SUM</button>
+        <p id="cal"></p>
+    </div>
+
+    <script>
+        document.getElementById("myEvt").addEventListener('click', displayDate);
+
+
+        function displayDate() {
+            document.getElementById("EvtLtn").innerHTML = Date();
+
+        }
+
+        var x = document.getElementById("myclick");
+
+        x.addEventListener('mouseover', myMouseover);
+        x.addEventListener('mouseout', myMouseout);
+        x.addEventListener('click', myClick);
+
+        function myMouseover() {
+            document.getElementById("para").innerHTML += "This is MouseOver Event";
+        }
+
+        function myMouseout() {
+            document.getElementById("para").innerHTML += "This is MouseOut Event";
+        }
+
+        function myClick() {
+            document.getElementById("para").innerHTML += "This is Clicked Event";
+        }
+        let p1 = 5;
+        let p2 = 7;
+        document.getElementById("mysum").addEventListener("click", function () {
+            myFunction(p1, p2);
+        });
+
+        function myFunction(a, b) {
+            document.getElementById("cal").innerHTML = a - b;
+        }
+    </script>
+</body>
+
+</html>

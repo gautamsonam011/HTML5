@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myInternational ul {
+            list-style: none;
+        }
+
+        #myInternational ul li a {
+            text-decoration: none;
+        }
+
+        #myInternational,
+        #oneInternational,
+        #twoInternational,
+        #threeInternational,
+        #fourInternational {
+            display: none;
+        }
+
+        #myInternational li a,
+        #oneInternational li a,
+        #twoInternational li a,
+        #threeInternational li a,
+        #fourInternational li a {
+            color: #2c5542;
+            font-family: serif;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 1rem;
+        }
+
+        .heading-line a {
+            font-size: medium;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .container-dropdown {
+            position: absolute;
+            background-color: #fba6a6;
+            width: 180px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <li class="nav-item "><a onclick="myFunction()" class="nav-link"
+                style="background: #2c5542; padding: 5px;color: #fff;">Internationals</a>
+            <div class=" container-dropdown">
+                <div id="myInternational">
+                    <div onclick="oneFunction()" class="nav-link nav-one">Nature</div>
+                    <ul id="oneInternational">
+                        <li><a href="#">Himachal Pradesh</a></li>
+                        <li><a href="#">Uttarakhand</a></li>
+                        <li><a href="#">Ladakh</a></li>
+                        <li><a href="#">Jammu & Kashmir</a></li>
+                        <li><a href="#">Meghalaya</a></li>
+                        <li><a href="#">Assam</a></li>
+                    </ul>
+                    <div onclick="twoFunction()" class="nav-link nav-two">Adventure</div>
+                    <ul id="twoInternational">
+                        <li><a href="#">Rajasthan</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Goa</a></li>
+                        <li><a href="#">Karnataka</a></li>
+                        <li><a href="#">North East India </a></li>
+                    </ul>
+                    <div onclick="threeFunction()" class="nav-link nav-three">Yatra</div>
+                    <ul id="threeInternational">
+                        <li><a href="#">Vaishno Devi</a></li>
+                        <li><a href="#">Kedarnath</a></li>
+                        <li><a href="#">Badrinath</a></li>
+                        <li><a href="#">Char Dham</a></li>
+                        <li><a href="#">Ramayana</a></li>
+                        <li><a href="#">9 Devi Yatra</a></li>
+                    </ul>
+                    <div onclick="fourFunction()" class="nav-link nav-four">All Time Favorites</div>
+                    <ul id="fourInternational">
+                        <li><a href="#">New Delhi</a></li>
+                        <li><a href="#">Punjab</a></li>
+                        <li><a href="#">Haryana</a></li>
+                        <li><a href="#">Gujarat</a></li>
+                        <li><a href="#">Uttar Pradesh</a></li>
+                        <li><a href="#">Madhya Pradesh</a></li>
+                        <li><a href="#">West Bengal</a></li>
+                        <li><a href="#">NORTH</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInternational");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+        function oneFunction() {
+            var x = document.getElementById("oneInternational");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function twoFunction() {
+            var x = document.getElementById("twoInternational");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function threeFunction() {
+            var x = document.getElementById("threeInternational");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function fourFunction() {
+            var x = document.getElementById("fourInternational");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        var a = document.getElementsByClassName('nav-one');
+        function hide(a) {
+            x.style.display = "none";
+        }
+        function show(a) {
+            x.style.display = "block";
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

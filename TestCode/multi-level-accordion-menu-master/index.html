@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Multi-Level Dropdown Menu with Pure CSS - W3jar.Com</title>
+      <style type="text/css">
+    *{
+    padding: 0px;
+    margin: 0px;
+}
+/** a{
+    text-decoration: none;
+}*/
+
+.nav-link{
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+/*    padding: 15px;*/
+    font-weight: bolder;
+
+
+
+}
+
+.dropdown-item{
+    font-weight: bold;
+}
+.dropdown-menu .dropdown-item:hover{
+   color: green;
+   background-color: yellow;
+/*   font-size: 25px;*/
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white !important;
+    text-align: center;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+
+/*.bg-light{
+    background-image: -webkit-linear-gradient(
+90deg
+, #26537f 0%, white 100%);
+}*/
+#logo{
+    /*margin-left:25px;*/
+       margin-top: -27px;
+        border-radius: 600px; 
+        width: 120px;
+         height: 120px; 
+         position: fixed;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: relative;
+    top: 0;
+    z-index: 1020;
+}
+#logo1{
+    margin-left:205px;
+       margin-top: -07px;
+       
+               
+}
+
+.frist-slide{
+text-align: left;
+font-weight: bolder;
+margin-bottom: 12px;
+font-size: 45px;
+margin-left: 30px;
+font-style: italic;
+
+}
+.frist-slide1{
+font-weight: 1000;
+margin-bottom: 70px;
+}
+
+
+
+.ml-auto{
+    margin-right: 150px;
+}
+
+.ourservices{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color:whitesmoke;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    color: black;
+    font-weight: bolder;
+
+}
+.display-5 {
+    border-radius: 0.3rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.card-text{
+    color: #aaa;
+}
+
+
+body{
+    background-color: #f8faff;
+}
+
+#rail{
+    font-size: 45px;
+    color: green;
+
+}
+
+
+#rail:hover{
+    color: #bee99f;
+    font-size: 55px;
+
+}
+.card{
+    box-shadow: 0px 0px 2px 2px #aaa;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.item {
+  padding-top: 0px;
+  text-align: center;
+  color: black;
+  
+
+}
+.item1 {
+  padding-top: 0px;
+  text-align: center;
+}
+p .span1{
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Week{
+    margin-left: 26px;
+    margin-top: 17px;
+    color: #aaa;
+    font-size: 20px;
+}
+.week1{
+    margin-left: 26px;
+    margin-top: 17px;
+    text-align: center;
+}
+
+.Week2{
+    color: #293483;
+}
+
+.images1{
+    margin-top: 25px;
+    color: white;
+}
+
+.images1 img{
+
+        width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 2s ease-in-out
+    }
+   
+
+.image {
+    border: 2px solid #fff;
+    width: 100%;
+    height: auto;
+    overflow: hidden
+}
+
+.image img {
+    width: 100%;
+    height: 315px;
+    object-fit: cover;
+    transition: all 2s ease-in-out
+}
+
+.image:hover img {
+    transform: scale(2.2);
+    cursor: pointer
+}
+
+.imag1{
+    border: 2px solid #fff;
+    width: 100%;
+    height: auto;
+    overflow: hidden
+}
+.imag1 img {
+    width: 100%;
+    height: 635px;
+    object-fit: cover;
+    transition: all 2s ease-in-out
+}
+
+
+.imag1:hover img {
+    transform: scale(3.3);
+    cursor: pointer
+}
+@media only screen and (max-width: 756px) {
+  .imag1
+  img{
+    height: 300px;
+    width: 100%;
+  }
+}
+
+
+.button{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 27px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #131e37;
+    margin-top: 25px;
+}
+.button a{
+    color: white;
+}
+.button a:hover{
+    color: #131e37;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: white;
+    border: 2px solid #131e37;
+    border-radius: 27px;
+}
+
+#filter-list {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 4px;
+    margin: 0 0 60px;
+    }
+
+    /*footer------------------*/
+    .footer{
+        background-color: #131e37;
+        margin-top: 55px;
+    }
+    .About-us{
+        color: white;
+        margin-top: 35px;
+    }
+
+    .About-us1{
+        color: #999;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .About-us1 a{
+        color: #999;
+    }
+    .About-us1 a:hover{
+        text-decoration: none;
+        color: white;
+    }
+
+    .north{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 45px 20px 25px;
+        text-align: center;
+        color: white;
+        font-size: 35px;
+    }
+    .Gurgaon {
+        text-decoration: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 45px 20px 25px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        font-weight: 500px;
+        text-transform: uppercase;
+    }
+    
+
+    /*About----------*/
+
+.our-team{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+.our-team img{
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+.our-team:hover img{
+    transform: scale(1.2);
+}
+.our-team .social{
+    list-style: none;
+    padding: 30px 15px;
+    background-color: #131e37;;
+    border-bottom-right-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.our-team:hover .social{
+    left: 0;
+}
+
+.our-team .social li{
+    display: block;
+}
+.our-team .social li a{
+    display: block;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team ,social li:first-child a{
+    padding-top: 0;
+}
+.our-team .social li:last-child a{
+    padding-bottom: 0;
+}
+.our-team .social li a:hover{
+    color: #000;
+}
+.our-team .team-content{
+    width: 100%;
+    padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.our-team .title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+@media only screen and (max-width: 990px){
+    .our-team{
+        margin-bottom: 30px;
+    }
+}
+
+ .social-media ul i{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 12px;
+ }
+
+ .social-media ul i:hover{
+    color: black;
+ }
+ 
+ .social-media li{
+    list-style-type: none;
+ }
+ 
+ .aboutus{
+    color: black;
+
+ }
+ .aboutus:hover{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+ }
+
+ .inner-page-banner {
+    width: 100%;
+    float: left;
+    height: 655px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 756px) {
+  .inner-page-banner{
+    height: 300px;
+    width: 100%;
+    margin-top: -15px;
+  }
+}
+
+
+
+
+
+.page-banner-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    
+}
+.inner-page-banner h1 {
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 12px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    color: black;
+    font-size: 70px;
+    
+}
+
+.breadcrumb {
+    padding: 0;
+    background: none;
+    display: block;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    display: inline-block;
+}
+.breadcrumb-item a {
+    color: white;
+    border-bottom: 8px solid  greenyellow;
+    border-radius: 4px;
+}
+.breadcrumb-item a:hover{
+    text-decoration: none;
+    color: black;
+}
+.breadcrumb-item.active {
+    color: white;
+}
+/*Contact*/
+.contact-info {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border:  1px solid #dcdcdc;
+}
+
+.contact-info:hover{
+    border:  1px solid #131e37;
+}
+
+.form-info input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 20px;
+
+}
+
+.form-info1 input{
+    vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 20px;
+
+
+}
+textarea{
+       padding: 5px;
+     background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 15px;
+
+
+}
+#contactram{
+    width: 70%;
+}
+#contactram1{
+    width: 95%;
+    margin-top: 65px;
+}
+
+@media screen and (max-width:800px) {
+  #contactram {
+  
+    width: 100%;
+  }
+}
+
+.book-tour h3 {
+    background: #131e37;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    line-height: 26px;
+    border: 2px solid #131e37;
+    border-radius: 27px;
+    padding: 12px 35px;
+    color: #fff;
+    font-weight: 500;
+    background: #131e37;
+    text-transform: capitalize;
+    opacity: 1;
+    box-shadow: none!important;
+    margin-top: 20px;
+}
+
+.btn.btn-primary:hover{
+    border: 2px solid #131e37;
+    background-color: #fff;
+    color: #131e37;
+}
+
+.Week3{
+    border-left: 3px solid #131e37;
+    background-color: #ecf2f2;
+    padding: 20px;
+}
+.jumbotron1 {
+    padding: 2rem 1rem;
+    margin-bottom: -1rem;
+    background-color: white;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    color: #aaa;
+
+}
+.sidenav {
+ 
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+#more {display: none;}
+
+.form-control {
+    display: block;
+    width: 75%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.inner-page-banner h1 {
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 12px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    color: #f8f5f5;
+
+    font-size: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  #navi {
+     margin-top: 6%;
+     padding-top: 4%;
+     padding-bottom: 40% ;
+    
+  }
+  #navi li{
+    height: 55px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #navi {
+     margin-top: 9%;
+     padding-top: 4%;
+    
+    
+  }
+  }
+  @media screen and (max-width: 414px) {
+  #navi {
+     margin-top: 10%;
+     padding-top: 4%;
+    
+    
+  }
+  }
+
+  @media screen and (max-width: 320px) {
+  #navi {
+     margin-top: 12%;
+     padding-top: 4%;
+    
+    
+  }
+
+  }
+
+
+
+
+
+@media screen and (max-width: 425px) {
+  
+  nav a #logo{
+    height: 16%;
+    width: 16vh;
+    margin-top: -5%;
+    border-radius: 500px
+  }
+  }
+  @media screen and (max-width: 768px) {
+  
+  nav a #logo{
+    height: 17%;
+    width: 17vh;
+    margin-top: -3%;
+    border-radius: 500px
+  }
+  }
+  @media screen and (max-width: 393px) {
+  
+  nav a #logo{
+    height: 13%;
+    width: 13vh;
+    margin-top: -5%;
+    border-radius: 500px
+  }
+  }
+
+ @media screen and (max-width: 320px) {
+  
+  nav a #logo{
+    height: 14%;
+/*    width: 14vh;*/
+    margin-top: -6%;
+/*  new add  */
+    position: inherit;
+       width: 25vh;
+ /*  new add  */   
+    border-radius: 500px
+  }
+  }
+
+
+
+  #summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#summary p.collapse:not(.show) {
+    height: 120px !important;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#summary p.collapsing {
+    min-height: 42px !important;
+}
+
+#summary a.collapsed:after  {
+    border: 2px solid #131e37;
+    background-color: #131e37;
+    padding: 5px;
+    color: white;
+    border-radius: 25%;
+    content: ' Read More';
+}
+#summary a:not(.collapsed),#summary a.collapsed:hover{
+    text-decoration: none;
+
+}
+
+#summary a:not(.collapsed):after {
+    border: 2px solid #131e37;
+    background-color: white;
+    padding: 5px;
+    color: #131e37;
+    border-radius: 25%;
+    content: ' Read Less';
+}
+
+
+.carousel-item img{
+    object-fit: cover;
+}
+.carousel-item .carousel-caption h1{
+   font-size: 8vh;
+
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+
+.black{
+    color: black;
+}
+.blue{
+    color: blue;
+}
+.blue:hover{
+    color: #aaa;
+    cursor: pointer;
+}
+.Week {
+    margin-left: 26px;
+    margin-top: 17px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+  .stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+
+.padding {
+    padding-left: 0px;
+}
+
+.owl-carousel .item {
+    margin: 3px
+}
+
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: 400px
+}
+
+.owl-carousel .item {
+    margin: 3px
+}
+
+.owl-carousel {
+    margin-bottom: 15px
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: pink
+}
+
+
+
+h2::selection,
+label::selection,
+button::selection {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper {
+  width: 90%;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.028), 0 0px 5.3px rgba(0, 0, 0, 0.04),
+    0 0px 10px rgba(0, 0, 0, 0.05), 0 0px 17.9px rgba(0, 0, 0, 0.06),
+    0 0px 33.4px rgba(0, 0, 0, 0.072), 0 0px 80px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  letter-spacing: 0.1rem;
+  cursor: default;
+}
+
+
+form,
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: initial;
+}
+.form-group label {
+  display: block;
+  margin: 2rem 0 0.5rem 0;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  transition: border 0.15s;
+  height: 112px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  height: 2.6rem;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.submit {
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  background: rgba(173, 216, 230, 0.7);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+i {
+  margin-right: 0.5rem;
+}
+.submit:hover {
+  background: rgba(173, 216, 230, 1);
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border: 1px solid #222;
+}
+
+@media screen and (min-width: 576px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+
+#mySidenav a {
+  position:fixed;
+  margin-top: 200px;
+  z-index: 1000 !important;
+  left: -30px;
+  transition: 0.3s;
+  padding: 5px;
+  width:70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  text-align: right;
+}
+
+
+
+
+#mySidenav a:hover {
+  left: 0px;
+}
+
+#about {
+  top: 10px;
+  background-color: black;
+}
+
+#blog {
+  top: 51px;
+  background-color: #f8faff;
+}
+
+#projects {
+  top: 92px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 133px;
+  background-color:green;
+}
+
+.modal-title{
+  margin-bottom: 0;
+  line-height: 0;
+ 
+
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 1.5rem;
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000000;
+    font-style: italic
+    }
+
+.modal-title {
+    margin-bottom: -16px;
+    line-height: 0;
+}
+
+
+/*
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+   90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+ }*/
+ .title1{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+ }
+
+.card {
+  transition: -webkit-transform 0.3s ease;
+}
+
+
+/* Responsive design for image heights */
+@media (min-width: 576px) { 
+  .card-img-top {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 768px) { 
+  .card-img-top {
+    height: 30vw;
+  }
+}
+
+@media (min-width: 992px) { 
+  .card-img-top {
+    height: 20vw;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .card-img-top {
+    height: 20vw;
+  }
+}
+.card-text{
+  padding: 12px;
+  text-align: center;
+  color:white;
+background: -webkit-linear-gradient(
+278deg
+, #1de1cf 0%, #333a5f 100%);
+}
+.card-text a{
+  text-decoration: none;
+  color: white;
+font-family: 'Titillium Web',sans-serif;
+
+}
+/* ================================================================= */
+.dropdown-menu-container{
+    width: 540px;
+    height: auto;
+    border-radius: 25px;
+    border-bottom: 2px solid rgb(246, 233, 93);
+}
+.dropdown-menu-container .row{
+    margin: 0 -40px;
+}
+.dropdown-menu-container .col-md-3{
+/* margin: -5px;*/
+}
+/*.dropdown-menu-container .dropdown-header{
+    text-align: center;
+    font-family: serif;
+    border-bottom: 2px solid rgb(246, 233, 93);
+}*/
+@media screen and (max-width:425px){
+    .dropdown-menu-container{
+    width:100px;
+    }
+}
+
+
+/*======================================New drop down=============================================*/
+.dropdown-menu li {
+position: relative;
+}
+ .dropdown-submenu {
+display: none;
+position: absolute;
+/*left: 100%;*/
+top: 25px;
+}
+ .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+/*=====================================================================================*/
+
+ 
+
+
+</style>
+
+<!-- ==============================New style 1================================== -->
+    <style>
+        
+
+        .newdeopdown {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100px;
+            background-color: #0abf53;
+        }
+
+      .newdeopdown li {
+            position: relative;
+        }
+
+        .newdeopdown li a {
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+          .newdeopdown li ul {
+/*            position: absolute;*/
+            top: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            line-height: normal;
+            background-color: #333;
+        }
+         .newdeopdown li ul li a {
+            text-align: left;
+            color: #cccccc;
+            font-size: 14px;
+            padding: 10px;
+            display: block;
+            white-space: nowrap;
+        }
+ .newdeopdown li ul li a:hover {
+            background-color: #0abf53;
+            color: #ffffff;
+        }
+
+        .newdeopdown li ul li ul {
+/*            left: 100%;*/
+            top: 0;
+        }
+
+        ..newdeopdown ul li:hover>a {
+            background-color: #0abf53;
+            color: #ffffff !important;
+        }
+
+        ..newdeopdown ul li:hover>ul {
+            display: block;
+        }
+/*<!-- ==============================New style 1================================== -->*/
+    </style>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="position: fixed; width: 100%; background-image: -webkit-linear-gradient( 268deg , #26537f 0%, white 100%);
+    color: black;">
+    <div class="container-fluid"> 
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="images/travel(11).gif">
+        </a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse pl-4" id="navbarNavDropdown">
+            <ul class="navbar-nav pl-5 mx-auto" id="navi">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+
+                </li>
+                 <li class="nav-item ">
+                    <a class="nav-link" href="about.php">About Us</a>
+
+                </li>
+               <!-- <div class="dropdown">
+                    <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Place</li>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="destinations.php">Destinations</a>
+                        <a class="dropdown-item" href="hotel.php"> Hotels</a>
+                        <a class="dropdown-item" href="gallery.php">Gallery</a>
+                    </div>
+                </div> -->
+            <div class="dropdown">
+                    <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Domestic</li>
+                    <div class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Nature</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                               <li><a class="dropdown-item" href="#"> Hotels</a></li>
+                               <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Adventure</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                               <li><a class="dropdown-item" href="#"> Hotels</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                       <li><a class="dropdown-item" href="#"> Hotels</a></li>
+                                       <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    </ul>
+                               </li>
+                               <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Yatra</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                               <li><a class="dropdown-item" href="#"> Hotels</a></li>
+                               <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">All Time Favorites</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                               <li><a class="dropdown-item" href="#"> Hotels</a></li>
+                               <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div> 
+         
+              
+
+                <div class="dropdown">
+                    <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Packages</li>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="domestic-blog.php"> Domestic Packages</a>
+                        <a class="dropdown-item" href="international-blog.php"> International Packages</a>
+                    </div>
+                </div> 
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
+                </li>
+ 
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link1
+        </a>
+        
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+                <a class="nav-link dropdown-toggle mb-0" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Main button</a>
+                 <div class="btn-group-vertical">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-top: -20px; border: none; width: 200px;">
+                            <a class="dropdown-item" href="#">Another1 action</a>
+                            <a class="dropdown-item" href="#">Another1 action</a>
+                            <a class="dropdown-item" href="#">Another1 action</a>
+                        </div>
+                </div>
+                        
+            <!-- </li> -->
+
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <!-- <div class="dropdown">
+                    <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    Packages23</li>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="domestic-blog.php"> Domestic Packages</a>
+                            <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                               <a > Nature</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                    </ul>
+                              </li>
+
+               
+                        <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                               <a >Adventure</a>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                    </ul>
+                              </li>
+
+
+                        <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                               <button type="button" class="btn btn-secondary"> Yatra</button>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                    </ul>
+                              </li>
+
+                              <li class="nav-link dropdown-toggle" data-toggle="dropdown">
+                               <button type="button" class="btn btn-secondary"> All Time Favorites</button>
+                                <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                       <li> <a class="dropdown-item" href="international-blog.php"> International Packages</a></li>
+                                    </ul>
+                              </li>
+
+                    </div>
+        </div> 
+
+
+             <!--    <li class="nav-item">
+                    <a class="nav-link" href="tel:+91 8506922777">+91-8506922777</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="payment_form.html">PAY NOW</a>
+                </li> -->
+            </ul>
+        </div> -->
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==============================New style 1================================== -->
+
+    <div class="dropdown newdeopdown">
+        <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="">Nice Dropdown Menu</a></li>
+                <li><a href="">Submenu - 1</a></li>
+                    <li><a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="">Submenu - 1</a></li>
+                            <li><a href="">Submenu - 2</a></li>
+                            <li><a href="#">Dropdown</a>
+                                <ul>
+                                    <li><a href="">Submenu - 1</a></li>
+                                    <li><a href="">Submenu - 2</a></li>
+                                    <li><a href="">Submenu - 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Submenu - 3</a></li>
+                        </ul>
+                    </li>
+                <li><a href="">Submenu - 2</a></li>
+            </ul>
+        </li>
+    </div>
+
+    <!--  <ul class="dropdown">
+        <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="">Nice Dropdown Menu</a></li>
+                <li><a href="">Submenu - 1</a></li>
+                    <li><a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="">Submenu - 1</a></li>
+                            <li><a href="">Submenu - 2</a></li>
+                            <li><a href="#">Dropdown</a>
+                                <ul>
+                                    <li><a href="">Submenu - 1</a></li>
+                                    <li><a href="">Submenu - 2</a></li>
+                                    <li><a href="">Submenu - 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Submenu - 3</a></li>
+                        </ul>
+                    </li>
+                <li><a href="">Submenu - 2</a></li>
+            </ul>
+        </li>
+    </ul> -->
+    <!-- ==============================New style 1================================== -->
+</body>
+
+</html>

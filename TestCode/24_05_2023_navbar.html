@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .navbar {
+      height: 70px;
+      width: 100vw;
+      background: linear-gradient(rgb(178, 178, 252), rgb(211, 206, 206));
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-items img {
+      height: 140px;
+      position: relative;
+      border: 0px solid black;
+      border-radius: 50%;
+      top: 20px;
+      left: -40px;
+    }
+
+    .home {
+      color: black;
+    }
+
+    .nav-items a {
+      margin-top: 5px;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+
+    }
+
+    .nav-items a:hover {
+      color: black;
+    }
+
+    /* ==================================== */
+    #domesticitems {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 400px;
+      height: 250px;
+      width: 200px;
+      z-index: 1;
+      border-radius: 10px;
+      background: linear-gradient(rgb(178, 178, 252), rgb(211, 206, 206));
+    }
+
+    #nature {
+      display: none;
+      position: absolute;
+      color: rgb(28, 29, 29);
+    }
+
+    #naturecontents {
+      display: none;
+      top: 50px;
+      position: absolute;
+    }
+
+    #naturecontents a {
+      color: #fff;
+      font-family: serif;
+    }
+
+    /* ============================ */
+    #adventure {
+      display: none;
+      position: absolute;
+      color: rgb(28, 29, 29);
+      top: 35px;
+
+    }
+
+    #advencontents {
+      display: none;
+      position: absolute;
+    }
+
+    #advencontents a {
+      color: #fff;
+      font-family: serif;
+    }
+
+    /* =============================== */
+    #yatra {
+      display: none;
+      position: absolute;
+      color: rgb(28, 29, 29);
+      top: 70px;
+
+    }
+
+    #yatracontent {
+      display: none;
+      position: absolute;
+    }
+
+    #yatracontent a {
+      color: #fff;
+      font-family: serif;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    #favorites {
+      display: none;
+      position: absolute;
+      color: rgb(28, 29, 29);
+      top: 70px;
+      top: 105px;
+
+    }
+
+    #favcontent {
+      display: none;
+      position: absolute;
+      width: 196px;
+    }
+
+    #favcontent a {
+      color: #fff;
+      font-family: serif;
+    }
+    #logo {
+      /*margin-left:25px;*/
+      margin-top: -27px;
+      border-radius: 600px;
+      width: 120px;
+      height: 120px;
+      position: fixed;
+    }
+    #navbarNavDropdown{
+      padding-left: 100px;
+    }
+    #navbarNavDropdown a{
+      padding-left: 20px;
+      color: #fff;
+      font-size:large;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =====================navbar=============== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img id="logo" src="images/travel(11).gif"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <a href="http" class="home">Home</a>
+      <a href="http">About Us</a>
+      <a id="domestic">Domestic <i class="fa-solid fa-caret-down" style="color: #eef1f6;"></i></a>
+      <div id="domesticitems">
+        <a id="nature">Nature <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="naturecontents">
+            <a href="#">Himachal Pradesh</a>
+            <a href="#">Uttarakhand</a>
+            <a href="#">Ladakh</a><br>
+            <a href="#">Jammu&Kashmir</a>
+            <a href="#">Meghalaya</a>
+            <a href="#">Assam</a>
+          </div>
+        </a>
+        <a id="adventure">Adventure <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="advencontents">
+            <a href="#">Rajasthan</a>
+            <a href="#">Mumbai</a><br>
+            <a href="#">Goa</a><br>
+            <a href="#">Karnataka</a><br>
+            <a href="#">North East India </a>
+          </div>
+        </a>
+        <a id="yatra">Yatra <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="yatracontent">
+            <a href="#">Vaishno Devi</a>
+            <a href="#">Kedarnath</a>
+            <a href="#">Badrinath</a><br>
+            <a href="#">Char Dham</a>
+            <a href="#">Ramayana</a><br>
+            <a href="#">9 Devi Yatra</a>
+          </div>
+        </a>
+        <a id="favorites">Favorites <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="favcontent">
+            <a href="#">New Delhi</a>
+            <a href="#">Punjab</a>
+            <a href="#">Haryana</a>
+            <a href="#">Gujarat</a><br>
+            <a href="#">Uttar Pradesh</a><br>
+            <a href="#">Madhya Pradesh</a><br>
+            <a href="#">West Bengal</a><br>
+            <a href="#">NORTH</a>
+          </div>
+        </a>
+      </div>
+      <a id="intern">International <i class="fa-solid fa-caret-down" style="color: #eef1f6;"></i></a>
+      <div id="internitems">
+        <a id="nature">Nature <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="naturecontents">
+            <a href="#">Himachal Pradesh</a>
+            <a href="#">Uttarakhand</a>
+            <a href="#">Ladakh</a><br>
+            <a href="#">Jammu&Kashmir</a>
+            <a href="#">Meghalaya</a>
+            <a href="#">Assam</a>
+          </div>
+        </a>
+        <a id="adventure">Adventure <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="advencontents">
+            <a href="#">Rajasthan</a>
+            <a href="#">Mumbai</a><br>
+            <a href="#">Goa</a><br>
+            <a href="#">Karnataka</a><br>
+            <a href="#">North East India </a>
+          </div>
+        </a>
+        <a id="yatra">Yatra <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="yatracontent">
+            <a href="#">Vaishno Devi</a>
+            <a href="#">Kedarnath</a>
+            <a href="#">Badrinath</a><br>
+            <a href="#">Char Dham</a>
+            <a href="#">Ramayana</a><br>
+            <a href="#">9 Devi Yatra</a>
+          </div>
+        </a>
+        <a id="favorites">Favorites <i class="fa-solid fa-caret-down" style="color: #000;"></i>
+          <div id="favcontent">
+            <a href="#">New Delhi</a>
+            <a href="#">Punjab</a>
+            <a href="#">Haryana</a>
+            <a href="#">Gujarat</a><br>
+            <a href="#">Uttar Pradesh</a><br>
+            <a href="#">Madhya Pradesh</a><br>
+            <a href="#">West Bengal</a><br>
+            <a href="#">NORTH</a>
+          </div>
+        </a>
+      </div>
+      <a href="http">Place</a>
+      <a href="http">Packages</a>
+      <a href="http">Contact Us</a>
+      <a href="http">+91 8506922777</a>
+      <a href="http">Pay Now</a>
+    </div>
+  </nav>
+
+  <script>
+    let domesticbtn = document.getElementById("domestic")
+    let domesticitems = document.getElementById("domesticitems")
+    let nature = document.getElementById("nature")
+    let naturecon = document.getElementById("naturecontents")
+    let adventure = document.getElementById("adventure")
+    let advencontents = document.getElementById("advencontents")
+    let yatra = document.getElementById("yatra")
+    let yatracontent = document.getElementById("yatracontent")
+    let favorites = document.getElementById("favorites")
+    let favcontent = document.getElementById("favcontent")
+
+    domesticbtn.addEventListener("click", (e) => {
+      e.preventDefault()
+      if (domesticitems.style.display == "none") {
+        domesticitems.style.display = "block"
+        nature.style.display = "block"
+        adventure.style.display = "block"
+        yatra.style.display = "block"
+        favorites.style.display = "block"
+      }
+      else {
+        domesticitems.style.display = "none"
+        nature.style.display = "none"
+        adventure.style.display = "none"
+        yatra.style.display = "none"
+        favorites.style.display = "none"
+      }
+      console.log("i am clicking");
+    })
+    nature.addEventListener("click", (e) => {
+      e.preventDefault()
+      if (naturecon.style.display == "none") {
+        naturecon.style.display = "block"
+        adventure.style.display = "none"
+        yatra.style.display = "none"
+        favorites.style.display = "none"
+      }
+      else {
+        naturecon.style.display = "none"
+        nature.style.display = "block"
+        adventure.style.display = "block"
+        yatra.style.display = "block"
+        favorites.style.display = "block"
+      }
+      console.log("i am clicking");
+    })
+    adventure.addEventListener("click", (e) => {
+      e.preventDefault()
+      if (advencontents.style.display == "none") {
+        nature.style.display = "none"
+        adventure.style.top = "0px"
+        adventure.style.display = "block"
+        advencontents.style.top = "50px"
+        advencontents.style.display = "block"
+        yatra.style.display = "none"
+        favorites.style.display = "none"
+      }
+      else {
+        advencontents.style.display = "none"
+        adventure.style.top = "35px"
+        nature.style.display = "block"
+        adventure.style.display = "block"
+        yatra.style.display = "block"
+        favorites.style.display = "block"
+      }
+      console.log("i am clicking");
+    })
+    yatra.addEventListener("click", (e) => {
+      e.preventDefault()
+      if (yatracontent.style.display == "none") {
+        nature.style.display = "none"
+        adventure.style.display = "none"
+        yatra.style.top = "0px"
+        yatra.style.display = "block"
+        yatracontent.style.top = "50px"
+        yatracontent.style.display = "block"
+        favorites.style.display = "none"
+      }
+      else {
+        yatracontent.style.display = "none"
+        yatra.style.top = "70px"
+        nature.style.display = "block"
+        adventure.style.display = "block"
+        yatra.style.display = "block"
+        favorites.style.display = "block"
+      }
+      console.log("i am clicking");
+    })
+    favorites.addEventListener("click", (e) => {
+      e.preventDefault()
+      if (favcontent.style.display == "none") {
+        nature.style.display = "none"
+        adventure.style.display = "none"
+        yatra.style.display = "none"
+        favorites.style.top = "0px"
+        favorites.style.display = "block"
+        favcontent.style.top = "50px"
+        favcontent.style.display = "block"
+      }
+      else {
+        favcontent.style.display = "none"
+        favorites.style.top = "105px"
+        nature.style.display = "block"
+        adventure.style.display = "block"
+        yatra.style.display = "block"
+        favorites.style.display = "block"
+      }
+      console.log("i am clicking");
+    })
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
