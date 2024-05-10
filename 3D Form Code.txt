@@ -1,0 +1,93 @@
+<body>
+<div class="container">
+<div class="box">
+<div class="cover"></div>
+<div class="shadow"></div>
+<div class="content">
+
+</div>
+</div>
+</div>
+</body>
+
+<style>
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:consolas;}
+body{
+display:flex;
+justify-content:center;
+min-hieght:100vh;
+overflow:hidden;
+background:white;
+}
+.container{
+diplay:flex;
+justfy-content:center;
+align-item:center;}
+.container .box{
+sition:relative;
+width
+hight
+display:flex;
+justify-content:center;
+align-item:center;}
+.container .box::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:25px;
+height:100%;
+background:linear-gradient( white,white,white);
+filter:blur(1px);
+z-index:1;
+}
+.container .box::after{
+content:'';
+position:absolute;
+top:1;
+right:-1;
+width:25px;
+height:100%;
+background:linear-gradient( white,white,white);
+filter:blur(1px);
+z-index:1;
+}
+
+.container.box::shadow{
+position:absolute;
+width:100%;
+height:100%;
+background:white;}
+
+.container.box::shadow::before{
+content:'';
+position:absolute;
+top:0;
+left:cal(100%+95px);
+width:120;
+height:240;
+backgound:linear-gradient(reba(0,0,0,0.075),transparent);
+transform:skewX(45deg);
+
+}
+
+
+
+.container.box::shadow::after{
+content:'';
+position:absolute;
+bottom:-200%;
+left:cal(100%+80px);
+width:100%;
+height:200%;
+backgound:linear-gradient(reba(0,0,0,0.075),transparent);
+transform:skewX(45deg);
+
+}
+
+
+
+</style>
